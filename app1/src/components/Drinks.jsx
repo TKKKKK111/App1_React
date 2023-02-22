@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 const Drink = ({drinks}) => {
 
     const [values,setValue] = useState("");
+
+   
     return ( 
 
         <>
@@ -27,7 +29,7 @@ const Drink = ({drinks}) => {
    
 
 
-        <div className='row'>
+        <div className='row row-cols-auto'>
                 
                     
                     
@@ -35,17 +37,25 @@ const Drink = ({drinks}) => {
                     
         {drinks.filter((item) =>
            item.strDrink.toLowerCase().includes(values)
-           ).map((item)=> 
+           ).map((item,index)=> 
            ( 
+            
       
                    
                  
-                   <div key={item.id} className="col">
+                   <div key={index} className="col col-auto">
 
                         <div className='card' id='card 'style={{maxWidth: "200px", borderRadius:"15px", boxShadow:"15 15 15 15 black", rowGap:""}}> 
                         <img src={item.strDrinkThumb} alt="" /> 
-                        
+
+
+                                       
+                            <div className='card-title'> <b>{item.strDrink}</b></div>
                             <div className='card-body'>
+
+                                <h8> {item.idDrink}</h8>
+                                <h3>{item.strCategory}</h3>
+
                                 <h5> {item.strDrink}</h5>
                             
                         

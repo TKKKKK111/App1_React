@@ -7,7 +7,8 @@ import Drink from './components/Drinks';
 
 
 function App() {
-  const url1 = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
+  const url1 = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s';
+  
 
   const fetchRopa = (url)=> {
       fetch(url).then(res => res.json())
@@ -15,8 +16,8 @@ function App() {
       .catch(error => console.error(error));  
   }
   
+
   const [ drink, setDrink ] = useState([]);
-console.log(drink);
   
       useEffect(()=> {
           
