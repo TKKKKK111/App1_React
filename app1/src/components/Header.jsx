@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
 
-const Header = ({drinks, parametro}) => {
+const Header = ({drinks}) => {
 
 const [values , setValue] = useState("");
 
 console.log(setValue)
-parametro = data.id;
+
 
     return (   
            
