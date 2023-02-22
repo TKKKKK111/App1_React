@@ -16,6 +16,8 @@
 
 .card { font-weight: auto; width: auto; height: auto;}
 
-.barra{ width: auto ; }
 
-.nav{ height: auto;}
+
+
+
+.barra{ padding: auto; height: auto; border-radius: 10px;}

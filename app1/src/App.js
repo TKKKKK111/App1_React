@@ -1,13 +1,13 @@
 
 import './App.css';
-import Header from './components/Header';
+
 import React, {useState,useEffect} from 'react'
 
 import Drink from './components/Drinks';
 
 
 function App() {
-  const url1 = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita';
+  const url1 = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
 
   const fetchRopa = (url)=> {
       fetch(url).then(res => res.json())
@@ -28,7 +28,6 @@ console.log(drink);
       
       <>
   
-        <Header/>
      <div className='container'>
    
 
