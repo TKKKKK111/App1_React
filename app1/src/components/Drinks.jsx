@@ -25,11 +25,12 @@ const Drink = ({drinks}) => {
 
         </nav>
     
+    
 
    
 
 
-        <div className='row row-cols-auto'>
+        <div className='row' id='container-fluid'>
                 
                     
                     
@@ -43,22 +44,39 @@ const Drink = ({drinks}) => {
       
                    
                  
-                   <div key={index} className="col col-auto">
+                   <div key={index} className="col-md-2">
 
-                        <div className='card' id='card 'style={{maxWidth: "200px", borderRadius:"15px", boxShadow:"15 15 15 15 black", rowGap:""}}> 
+                        <div className='card' id='card 'style={{maxWidth: "200px", borderRadius:"15px", boxShadow:"15 15 15 15 black"}}> 
                         <img src={item.strDrinkThumb} alt="" /> 
 
 
                                        
                            
                            
-                            <div className='card-title'> <b>{item.strDrink}</b></div>
-                            <div className='card-body'>
+                            <div className='card-title'>   <h4>{item.strDrink}</h4><h5><b>
+                                {item.strCategory}
+                            </b></h5></div>
+                            <div className='card-body' >
+                                    <ul style={{listStyle:"none"}}>
+                                            <p>Ingredients</p>
+                                       
+                                        <li>
+                                            {item.strIngredient1}
+                                        </li>
+                                        <li>
+                                        {item.strIngredient2}
+                                        </li>
+                                        <li>
+                                        {item.strIngredient3}
+                                        </li>
+                                        <li>
+                                        {item.strIngredient4}
+                                        </li>
+                                    </ul>
+                                <button type='button' className='btn btn-success'> Preparación</button>
 
-                                <h8> {item.idDrink}</h8>
-                                <h3>{item.strCategory}</h3>
+                              
 
-                                <h5> {item.strDrink}</h5>
                             
                         
 

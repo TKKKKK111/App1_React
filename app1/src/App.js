@@ -4,6 +4,8 @@ import './App.css';
 import React, {useState,useEffect} from 'react'
 
 import Drink from './components/Drinks';
+import Footer from './components/Footer';
+
 
 
 function App() {
@@ -28,14 +30,15 @@ function App() {
       return ( 
       
       <>
-  
-     <div className='container'>
    
 
-     <Drink drinks={drink}/></div>
+     <Drink drinks={drink}/> 
+     
+    <Footer/>
+  
       
-    
-     </>
+    </>
+     
       
   );
   }
