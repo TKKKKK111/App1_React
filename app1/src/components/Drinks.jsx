@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+import './Drinks.css';
 
 
 
@@ -8,15 +9,17 @@ import React, { useState } from 'react'
 
 const Drink = ({drinks}) => {
 
+
+
     const [values,setValue] = useState("");
 
    
     return ( 
 
-        <>
-        <nav className="nav justify-content-center" id= "nav">
+        <> 
+        <nav className="nav justify-content-center w-auto h-auto d-flex" id= "nav">
 
-            <a className="nav-link disable"></a>
+        <div className='navbar-toggler-icon'></div>
          
 
         <form role={'search'} className='d-flex'>
@@ -33,7 +36,7 @@ const Drink = ({drinks}) => {
     
     
 
-   
+
 
 
         <div className='row' id='container-fluid'>
@@ -50,14 +53,13 @@ const Drink = ({drinks}) => {
       
                    
                  
-                   <div key={index} className="col-md-2">
+                   <div key={index} className="col-md-3">
 
-                        <div className='card' id='card 'style={{maxWidth: "200px", borderRadius:"15px", boxShadow:"15 15 15 15 black"}}> 
+                        <div className='card' id='card 'style={{ maxWidth:"230px",maxHeight:"500px",borderRadius:"15px", boxShadow:"15 15 15 15 black"}}> 
                         <img src={item.strDrinkThumb} alt="" /> 
 
 
                                        
-                           
                            
                             <div className='card-title'>   <h4>{item.strDrink}</h4><h5><b>
                                 {item.strCategory}
@@ -79,7 +81,7 @@ const Drink = ({drinks}) => {
                                         {item.strIngredient4}
                                         </li>
                                     </ul>
-                                <button type='button' className='btn btn-success'> Preparación</button>
+                              <button type='button' className='btn btn-success'> Preparación!</button> 
 
                               
 

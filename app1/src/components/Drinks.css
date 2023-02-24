@@ -2,21 +2,16 @@
 
 .nav a{
 
-  color: rgb(247, 247, 247);
+  color: rgb(247, 247, 247);width: auto;height:100%;
 }
-.nav a:hover{
 
-  background-color: #0f1014;
-  border-radius: 15px;
-  color: aliceblue;
-}
 #container-fluid{ background: linear-gradient(90deg,rgba(2,0,36,1) 0% , rgb(110, 80, 92) 43% , rgba(35,36,36,1) 100%); }
 
-.card img { border-radius: 15px; display: flex; filter:brightness(0.9); width: 200px; height: 200px; object-fit: fill;}
+.card img { border-radius: 15px; display: flex; filter:brightness(0.9); width: 230px; height: 200px; object-fit: fill;}
 
 
 .card { font-weight: auto; width: auto; height: auto; background-color: #3c3c3e; color: #fffef7; box-shadow: 2px 2px 2px 2px rgb(13, 13, 13);}
-.root { background: linear-gradient(90deg,rgba(2,0,36,1) 0% , rgb(110, 80, 92) 43% , rgba(35,36,36,1) 100%); }
+
 
 .card-body li { color:#dfc57a;}
 .card-title {  text-align: center;}
@@ -25,4 +20,7 @@
 .card-title h5 { color: #f8f8f8;}
 
 
+
 .barra{ padding: auto; height: auto; height: auto; border-radius: 10px; margin: 15px;}
+
+

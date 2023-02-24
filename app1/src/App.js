@@ -4,11 +4,26 @@ import './App.css';
 import React, {useState,useEffect} from 'react'
 
 import Drink from './components/Drinks';
-import Footer from './components/Footer';
+import App2 from './App2';
+
 
 
 
 function App() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   const url1 = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s';
   
 
@@ -34,10 +49,10 @@ function App() {
 
      <Drink drinks={drink}/> 
      
-    <Footer/>
-  
+    <App2/>
       
     </>
+
      
       
   );
