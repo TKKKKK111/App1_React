@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+;
+import PropTypes from 'prop-types';
 
 import './Drinks.css';
 
@@ -8,7 +10,6 @@ import './Drinks.css';
 
 
 const Drink = ({drinks}) => {
-
 
 
     const [values,setValue] = useState("");
@@ -81,8 +82,8 @@ const Drink = ({drinks}) => {
                                         {item.strIngredient4}
                                         </li>
                                     </ul>
-                              <button type='button' className='btn btn-success'> Preparación!</button> 
-
+                             <button type='button' className='btn btn-success'> Preparación!</button>
+                            
                               
 
                             
@@ -91,6 +92,7 @@ const Drink = ({drinks}) => {
 
 
                             </div>
+                            
 
                         </div>
 
@@ -107,3 +109,8 @@ const Drink = ({drinks}) => {
 }
  
 export default Drink;
+
+Drink.propTypes={
+  
+    drinks: PropTypes.array.isRequired
+};

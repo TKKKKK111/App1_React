@@ -4,7 +4,7 @@ import './App.css';
 import React, {useState,useEffect} from 'react'
 
 import Drink from './components/Drinks';
-import App2 from './App2';
+
 
 
 
@@ -49,7 +49,7 @@ function App() {
 
      <Drink drinks={drink}/> 
      
-    <App2/>
+
       
     </>
 
@@ -60,3 +60,4 @@ function App() {
 
 
 export default App;
+
